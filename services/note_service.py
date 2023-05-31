@@ -31,4 +31,4 @@ class NoteService:
         self.dao.update(note)
 
     def delete(self, nid):
-        return self.dao.delete(nid)
+        self.dao.delete(nid)
