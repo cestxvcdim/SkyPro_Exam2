@@ -1,10 +1,10 @@
-from dao.note_dao import NoteDAO
-from dao.models.note import NoteSchema
-from services.note_service import NoteService
+from dao.lecture_dao import LectureDAO
+from dao.models.lecture import LectureSchema
+from services.lecture_service import LectureService
 from setup_db import db
 
-note_dao = NoteDAO(db.session)
-note_service = NoteService(dao=note_dao)
+lecture_dao = LectureDAO(db.session)
+lecture_service = LectureService(dao=lecture_dao)
 
-note_schema = NoteSchema()
-notes_schema = NoteSchema(many=True)
+lecture_schema = LectureSchema()
+lectures_schema = LectureSchema(many=True)
