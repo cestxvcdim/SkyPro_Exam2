@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   api:
-    image: cestxvcdim/notes_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+    image: cestxvcdim/exam_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID
     ports:
       - "80:80"
     volumes:
