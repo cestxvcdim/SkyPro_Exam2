@@ -6,6 +6,13 @@ from views.lectures import lecture_ns
 
 
 def create_app(config: Config) -> Flask:
+    """
+    Create an application
+    And apply all configurations
+    With extensions.
+
+    Returns the application.
+    """
     application = Flask(__name__)
     application.config.from_object(config)
     application.app_context().push()
@@ -14,6 +21,13 @@ def create_app(config: Config) -> Flask:
 
 
 def register_extensions(application: Flask) -> None:
+    """
+    Initialize a database for the application.
+
+    Create the api for application
+    And add all namespaces.
+    """
+
     db.init_app(application)
     api = Api(application)
     api.add_namespace(lecture_ns)

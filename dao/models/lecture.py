@@ -3,6 +3,19 @@ from marshmallow import Schema, fields
 
 
 class Lecture(db.Model):
+    """
+    Model of lecture.
+
+    Example data:
+    Lecture(
+        id=1,
+        subject="English",
+        lecture_date="12.12.2023",
+        full_name="Ivan Ivanov",
+        class_number=200
+    )
+    """
+
     __tablename__ = 'lecture'
 
     id = db.Column(db.Integer, primary_key=True)
@@ -13,6 +26,10 @@ class Lecture(db.Model):
 
 
 class LectureSchema(Schema):
+    """
+    Schema of lecture's model.
+    """
+
     id = fields.Int(dump_only=True)
     subject = fields.Str()
     lecture_date = fields.Str()

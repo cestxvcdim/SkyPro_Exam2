@@ -1,3 +1,9 @@
+"""
+Implement objects of each class once
+For using them in other files.
+"""
+
+
 from dao.lecture_dao import LectureDAO
 from dao.models.lecture import LectureSchema
 from services.lecture_service import LectureService
