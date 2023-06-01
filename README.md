@@ -70,18 +70,24 @@ Werkzeug==2.3.4
 [
     {
         "id": 1, 
-        "name": "Note 1", 
-        "text": "Hello world!"
+        "subject": "Coding", 
+        "lecture_date": "01.01.2023",
+        "full_name": "Ivan Fufaev",
+        "class_number": 200
     }, 
     {
         "id": 2, 
-        "name": "Note 2", 
-        "text": "Code your way to success"
+        "subject": "Mathematics", 
+        "lecture_date": "31.12.2023",
+        "full_name": "Nikolay Ivanov",
+        "class_number": 303
     }, 
     {
         "id": 3, 
-        "name": "Note 3", 
-        "text": "Test"
+        "subject": "Physics", 
+        "lecture_date": "18.05.2023",
+        "full_name": "George Soloviev",
+        "class_number": 100
     }
 ]
 ```
@@ -93,8 +99,10 @@ Werkzeug==2.3.4
 ```json
 {
     "id": 2, 
-    "name": "Note 2", 
-    "text": "Code your way to success"
+    "subject": "Mathematics", 
+    "lecture_date": "31.12.2023",
+    "full_name": "Nikolay Ivanov",
+    "class_number": 303
 }
 ```
 
@@ -102,8 +110,10 @@ Werkzeug==2.3.4
 
 ```json
 {
-    "name": "Note 4", 
-    "text": "New note"
+    "subject": "English", 
+    "lecture_date": "21.10.2023",
+    "full_name": "Ksenya Golovina",
+    "class_number": 17
 }
 ```
 
@@ -112,8 +122,10 @@ Werkzeug==2.3.4
 ```json
 {
     "id": 4,
-    "name": "Note 4", 
-    "text": "New note"
+    "subject": "English", 
+    "lecture_date": "21.10.2023",
+    "full_name": "Ksenya Golovina",
+    "class_number": 17
 }
 ```
 
@@ -121,8 +133,10 @@ Werkzeug==2.3.4
 
 ```json
 {
-    "name": "Updated note", 
-    "text": "Updated text"
+    "subject": "New subject", 
+    "lecture_date": "09.04.2023",
+    "full_name": "New teacher",
+    "class_number": 15
 }
 ```
 
@@ -131,8 +145,10 @@ Werkzeug==2.3.4
 ```json
 {
     "id": 3,
-    "name": "Updated note", 
-    "text": "Updated text"
+    "subject": "New subject", 
+    "lecture_date": "09.04.2023",
+    "full_name": "New teacher",
+    "class_number": 15
 }
 ```
 
@@ -142,7 +158,7 @@ Werkzeug==2.3.4
 
 ```json
 {
-    "message": "Note has deleted successfully"
+    "message": "Lecture has deleted successfully"
 }
 ```
 ---
