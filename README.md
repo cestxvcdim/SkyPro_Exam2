@@ -62,7 +62,7 @@ Werkzeug==2.3.4
 
 ### Examples:
 
-#### Request: GET http://localhost/notes
+#### Request: GET http://localhost/lectures
 
 #### Response:
 
@@ -92,7 +92,7 @@ Werkzeug==2.3.4
 ]
 ```
 
-#### Request: GET http://localhost/notes/2
+#### Request: GET http://localhost/lectures/2
 
 #### Response:
 
@@ -106,7 +106,7 @@ Werkzeug==2.3.4
 }
 ```
 
-#### Request: POST http://localhost/notes
+#### Request: POST http://localhost/lectures
 
 ```json
 {
@@ -129,7 +129,7 @@ Werkzeug==2.3.4
 }
 ```
 
-#### Request: PUT http://localhost/notes/3
+#### Request: PUT http://localhost/lectures/3
 
 ```json
 {
@@ -152,7 +152,7 @@ Werkzeug==2.3.4
 }
 ```
 
-#### Request: DELETE http://localhost/notes/2
+#### Request: DELETE http://localhost/lectures/2
 
 #### Response:
 
